@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECC - Laboratório</title>
+    <!-- Links para os estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+    <!-- Topbar Apoiadores -->
+    <section class="topbar-apoiadores">
+        <p>Apoiadores do Laboratório: <span>CNPq</span> | <span>FAPESP</span> | <span>UnB</span></p>
+    </section>
+
+    <!-- Header com Logo à esquerda e Menu à direita -->
+    <header class="header-principal">
+        <div class="header-wrapper">
+            <!-- Espaço do Logo do LECC -->
+            <a href="index.html" class="logo-lecc">
+                <img src="assets/icons/icon-lecc.png" alt="Logo LECC" class="logo-img">
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    
+                    <li class="dropdown">
+                        <button class="dropdown-btn" onclick="toggleDropdown('drop-acervo', event)">Acervo ▾</button>
+                        <ul class="dropdown-content" id="drop-acervo">
+                            <li><a href="#">Jogos</a></li>
+                            <li><a href="#">Livros</a></li>
+                            <li><a href="#">Modelos Didáticos</a></li>
+                            <li><a href="#">Propostas Didáticas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="dropdown-btn" onclick="toggleDropdown('drop-acoes', event)">Ações ▾</button>
+                        <ul class="dropdown-content" id="drop-acoes">
+                            <li><a href="#">Noite de Jogos</a></li>
+                            <li><a href="#">Leituras LECC</a></li>
+                            <li><a href="#">Projetos de Extensão</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pages/o-lecc.html" class="nav-link">O LECC</a></li>
+                    <li><a href="pages/equipe.html" class="nav-link">Nossa Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal: Apresentação e Carrossel 3D -->
+    <main class="container-principal">
+        <section class="apresentacao">
+            <!-- Coluna de Texto (Esquerda) -->
+            <div class="texto-apresentacao">
+                <h1>Laboratório de Ensino de Ciências e Cultura</h1>
+               <center><p><strong>Bem Vindo</strong>.</p></center>
+            </div>
+            <!-- Coluna do Carrossel 3D (Direita) -->
+            <div class="carrossel-container">
+                <!-- Imagens de demonstração (substitua pelo caminho correto da sua pasta assets) -->
+                <img src="assets/imagens-lab/lab01.jpg" alt="Ciência 1" class="imagem-3d ativa">
+                <img src="assets/imagens-lab/livros.jpg" alt="Ciência 2" class="imagem-3d proxima">
+                <img src="assets/imagens-lab/orgaos.jpg" alt="Ciência 3" class="imagem-3d anterior">
+            </div>
+        </section>
+    </main>
+    <main class="container-principal">
+        <section class="Apresentação">
+            <div class="texto-apresentacao">
+            <p>O Laboratório de Ensino de Ciências e Cultura (LECC) é um laboratório multidisciplinar 
+                que oferece recursos didáticos para atividades e projetos tendo como principal objetivo 
+                dar subsídios para a formação de estudantes em Ciências Biológicas e promover atividades 
+                que contribuam para discussões sobre o ensino-aprendizagem de Ciências Naturais e Biologia. 
+                Além de atividades de Ensino de Ciências também apoiamos e realizamos ações Culturais.
+            </p>
+            <center><p>
+                Nosso Laboratório fica localizado dentro do NECBio, no Instituto de Ciências Biológicas da Universidade de Brasília (UnB), 
+                Campus Darcy Ribeiro (DF).
+            </p></center>
+            </div>
+        </section>
+    </main>
+    <!-- Scripts -->
+    <script src="js/global.js"></script>
+    <script src="js/animacoes.js"></script>
+</body>
+</html>

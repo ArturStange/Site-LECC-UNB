@@ -1,0 +1,107 @@
+/* Variáveis de Cores do Projeto */
+:root {
+    --cor-fundo: #d5e4d9;
+    --cor-titulo: #387b5b;
+    --cor-texto: #142c20;
+    --cor-header: #002400;
+    --cor-header-hover: #333333;
+    --cor-branca: #ffffff;
+    --cor-texto-header:#a1e8a1;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Estilo do Corpo da Página */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat', sans-serif;
+    color: var(--cor-titulo);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.container-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    min-height: 60vh;
+}
+
+.texto-apresentacao {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-apresentacao h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.texto-apresentacao p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-primario {
+    display: inline-block;
+    background-color: var(--cor-titulo);
+    color: var(--cor-branca);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primario:hover {
+    background-color: #2a5a42;
+    transform: translateY(-3px);
+}
+
+.hero h1 {
+    font-size: 3.0rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
