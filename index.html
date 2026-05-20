@@ -3,12 +3,13 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 </style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LECC - Laboratório</title>
+    <title>LECC - UnB</title>
     <!-- Links para os estilos -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/componentes.css">
@@ -17,7 +18,7 @@
 
     <!-- Topbar Apoiadores -->
     <section class="topbar-apoiadores">
-        <p>Apoiadores do Laboratório: <span>CNPq</span> | <span>FAPESP</span> | <span>UnB</span></p>
+        <p>Apoiadores do Laboratório: <span>DEG/DEX - Licenciaturas em Movimento em Rede</span> | <span>UnB</span></p>
     </section>
 
     <!-- Header com Logo à esquerda e Menu à direita -->
@@ -63,8 +64,17 @@
         <section class="apresentacao">
             <!-- Coluna de Texto (Esquerda) -->
             <div class="texto-apresentacao">
-                <h1>Laboratório de Ensino de Ciências e Cultura</h1>
-               <center><p><strong>Bem Vindo</strong>.</p></center>
+                <center><h1>Laboratório de Ensino de Ciências e Cultura</h1></center>
+                <p>O Laboratório de Ensino de Ciências e Cultura (LECC) é um laboratório multidisciplinar 
+                que oferece recursos didáticos para atividades e projetos tendo como principal objetivo 
+                dar subsídios para a formação de estudantes em Ciências Biológicas e promover atividades 
+                que contribuam para discussões sobre o ensino-aprendizagem de Ciências Naturais e Biologia. 
+                Além de atividades de Ensino de Ciências também apoiamos e realizamos ações Culturais.
+            </p>
+            <p>
+                Nosso Laboratório fica localizado dentro do NECBio, no Instituto de Ciências Biológicas da Universidade de Brasília (UnB), 
+                Campus Darcy Ribeiro (DF).
+            </p>
             </div>
             <!-- Coluna do Carrossel 3D (Direita) -->
             <div class="carrossel-container">
@@ -74,23 +84,92 @@
                 <img src="assets/imagens-lab/orgaos.jpg" alt="Ciência 3" class="imagem-3d anterior">
             </div>
         </section>
-    </main>
-    <main class="container-principal">
-        <section class="Apresentação">
+
+        <section class="secao-cards">
+            <div class="cards-carrossel">
+                <button class="seta-slider" id="btn-voltar"></button>
+                <div class="cards-view">
+                    <div class="cards-container" id="slider-cards">
+                        <article class="card">
+                            <img src="assets/imagens-modelos/Dente-mHUM23.jpg" alt="Ensino">
+                            <div class="card-conteudo">
+                                <h3>Modelo - Dente</h3>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="assets/imagens-modelos/Olho-mHUM21.jpg" alt="Pesquisa">
+                            <div class="card-conteudo">
+                                <h3>Modelo - Olho</h3>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="assets/imagens-modelos/Ouvido-mHUM.jpg" alt="Cultura">
+                            <div class="card-conteudo">
+                                <h3>Modelo - Ouvido</h3>
+                             </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="assets/imagens-modelos/Ovariano-mHUM7.jpg" alt="Cultura">
+                            <div class="card-conteudo">
+                                <h3>Modelo - Ovário</h3>
+                             </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="assets/imagens-modelos/Pele -mHUM.jpg" alt="Cultura">
+                            <div class="card-conteudo">
+                                <h3>Modelo - Pele</h3>
+                             </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="seta-slider" id="btn-avancar"></button>
+            </div>
+            <br>
+            <br>
             <div class="texto-apresentacao">
-            <p>O Laboratório de Ensino de Ciências e Cultura (LECC) é um laboratório multidisciplinar 
-                que oferece recursos didáticos para atividades e projetos tendo como principal objetivo 
-                dar subsídios para a formação de estudantes em Ciências Biológicas e promover atividades 
-                que contribuam para discussões sobre o ensino-aprendizagem de Ciências Naturais e Biologia. 
-                Além de atividades de Ensino de Ciências também apoiamos e realizamos ações Culturais.
-            </p>
-            <center><p>
-                Nosso Laboratório fica localizado dentro do NECBio, no Instituto de Ciências Biológicas da Universidade de Brasília (UnB), 
-                Campus Darcy Ribeiro (DF).
-            </p></center>
+                <h2>O Laboratório de Ensino de Ciências e Cultura (LECC) visa:</h2>
+                <ol>
+                    <li>Estimular o uso de recursos didáticos compartilhados pelos alunos de graduação;</li> 
+                    <li>Motivar os estudantes para continuar aperfeiçoando a sua formação crítica e reflexiva;</li>
+                    <li>Incentivar, promover e difundir pesquisas e materiais educativos, na articulação entre Universidade e instituições de ensino básico;</li>
+                    <li>Reforçar a capacidade de trabalhar em equipe, resolver problemas e a capacidade de comunicação;</li>
+                    <li>Favorecer a elaboração de projetos inter e multidisciplinares a partir de diversos temas;</li>
+                    <li>Contribuir para a produção, organização e divulgação um acervo didático relacionado às diferentes disciplinas do curso;</li>
+                    <li>Constituir um espaço capaz de integrar atividades de pesquisa, ensino e extensão e cultura.</li>
+                </ol>
             </div>
         </section>
     </main>
+
+    <footer class="rodape-principal">
+        <div class="rodape-container">
+            
+            <div class="rodape-icones">
+                <a href="#" aria-label="Instagram" class="icone-link">
+                    <img src="assets/icon-insta.png" alt="Instagram do LECC">
+                </a>
+                <a href="#" aria-label="E-mail" class="icone-link">
+                    <img src="assets/icon-email.png" alt="E-mail do LECC">
+                </a>
+                <a href="#" aria-label="Localização" class="icone-link">
+                    <img src="assets/icons/icon-ecbio-unb.png" alt="Localização do LECC">
+                </a>
+            </div>
+
+            <div class="rodape-texto">
+                <p><strong>Laboratório de Ensino de Ciências e Cultura (LECC)</strong></p>
+                <p>NECBio - Instituto de Ciências Biológicas, Universidade de Brasília (UnB), Campus Darcy Ribeiro (DF)</p>
+                
+                <p class="copyright">© 2026 LECC - UnB. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
     <!-- Scripts -->
     <script src="js/global.js"></script>
     <script src="js/animacoes.js"></script>

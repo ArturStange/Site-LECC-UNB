@@ -15,3 +15,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 3500);
 });
+
+const trackCards = document.getElementById('slider-cards');
+    const btnAvancar = document.getElementById('btn-avancar');
+    const btnVoltar = document.getElementById('btn-voltar');
+    
+    let indexCardAtual = 0;
+
+    // Função que calcula o quanto deslizar para o lado
+    function atualizarSliderCards() {
+        const cards = trackCards.querySelectorAll('.card');
+        if (cards.length === 0) return;
+
+        // Pega a largura do card + o gap (espaçamento) entre eles
+        const larguraCard = cards[0].offsetWidth;
+        const gap = parseFloat(window.getComputedStyle(trackCards).gap) || 0;
+        const movimento = larguraCard + gap;
+        
+        // Desliza a trilha
+        trackCards.style.transform = `translateX(-${indexCardAtual * movimento}px)`;
+    }
+
+    // Clique na seta DIREITA (Avançar)
+    btnAvancar.addEventListener('click', () => {
+        const cards = trackCards.querySelectorAll('.card');
+        
+        // Calcula quantos cards cabem na tela atualmente (ex: 3 no PC, 1 no celular)
+        const cardsVisiveis = Math.round(trackCards.parentElement.offsetWidth / cards[0].offsetWidth);
+        
+        // Calcula o limite máximo de cliques permitidos para não sumir tudo
+        const maxCliques = cards.length - cardsVisiveis;
+
+        if (indexCardAtual < maxCliques) {
+            indexCardAtual++;
+            atualizarSliderCards();
+        }
+    });
+
+    // Clique na seta ESQUERDA (Voltar)
+    btnVoltar.addEventListener('click', () => {
+        if (indexCardAtual > 0) {
+            indexCardAtual--;
+            atualizarSliderCards();
+        }
+    });
+
+    // Se o usuário redimensionar a tela, ajusta o slider para não ficar quebrado
+    window.addEventListener('resize', () => {
+        indexCardAtual = 0;
+        atualizarSliderCards();
+    });

@@ -74,7 +74,7 @@
     text-transform: uppercase;
     font-size: 0.95rem;
     font-weight: 600;
-    font-family: 'caveat', sans-serif;
+    font-family: 'playfair-display', sans-serif;
     letter-spacing: 1px;
     background: none;
     border: none;
@@ -120,7 +120,7 @@
     display: block;
     text-align: center;
     font-size: 0.9rem;
-    font-family: 'caveat', sans-serif;
+    font-family: 'playfair-display', sans-serif;
     transition: background-color 0.2s;
 }
 
